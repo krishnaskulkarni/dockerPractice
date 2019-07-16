@@ -2,8 +2,8 @@
 FROM ubuntu:latest
 
 
-ADD ./target/gs-serving-web-content-0.1.0.jar spring-mvc-example.jar
+ADD ./build/libs/person-0.0.1-SNAPSHOT.jar test.jar
 
 EXPOSE 8080
 
-CMD java -jar spring-mvc-example.jar
+CMD java -jar test.jar
